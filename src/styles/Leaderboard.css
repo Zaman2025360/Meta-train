@@ -1,0 +1,108 @@
+.leaderboard-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.leaderboard-title {
+    color: #ffa276;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(255, 162, 118, 0.5);
+}
+
+.leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.leaderboard-table th {
+    background-color: rgba(255, 162, 118, 0.2);
+    font-weight: bold;
+    color: #ffa276;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.rank-cell {
+    font-weight: bold;
+    text-align: center;
+    width: 60px;
+}
+
+.score-cell {
+    font-weight: bold;
+    color: #ffa276;
+    text-align: right;
+}
+
+.date-cell {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+.rank-1 {
+    background-color: rgba(255, 215, 0, 0.1);
+}
+
+.rank-1 .rank-cell {
+    color: gold;
+}
+
+.rank-2 {
+    background-color: rgba(192, 192, 192, 0.1);
+}
+
+.rank-2 .rank-cell {
+    color: silver;
+}
+
+.rank-3 {
+    background-color: rgba(205, 127, 50, 0.1);
+}
+
+.rank-3 .rank-cell {
+    color: #cd7f32;
+    /* bronze */
+}
+
+.no-scores-message {
+    text-align: center;
+    color: #ccc;
+    font-style: italic;
+    padding: 20px;
+}
+
+.leaderboard-loading,
+.leaderboard-error {
+    text-align: center;
+    padding: 20px;
+    color: #ccc;
+}
+
+.leaderboard-error {
+    color: #ff6b6b;
+}
+
+@media (max-width: 600px) {
+    .date-cell {
+        display: none;
+    }
+
+    .leaderboard-table th,
+    .leaderboard-table td {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+}
