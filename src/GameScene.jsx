@@ -51,7 +51,7 @@ export const GameScene = ({ onReturnHome }) => {
                     height: "100vh",
                 }}
             >
-                <color args={[0x808080]} attach={"background"}></color>
+                <color args={[0x1a1a2e]} attach={"background"}></color>
                 <PerspectiveCamera makeDefault position={[0, 1.6, 2]} fov={75} />
                 <Environment preset="warehouse" />
                 <Bullets />
